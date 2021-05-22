@@ -4,7 +4,6 @@
 //
 //  Created by 김수경 on 2021/05/22.
 //
-
 import UIKit
 import MapKit
 import CoreLocation
@@ -68,7 +67,7 @@ class CourseViewController: UIViewController, CLLocationManagerDelegate {
      
         let annotation = MKPointAnnotation()
         annotation.coordinate = goLocation(latitudeValue: latitudeValue, longitudeValue: longitudeValue, delta: span)
-        annotation.title=strTitle
+        annotation.title = strTitle
         annotation.subtitle = strSubtitle
         myMap.addAnnotation(annotation)
     }
@@ -186,3 +185,4 @@ class CourseViewController: UIViewController, CLLocationManagerDelegate {
  
 
 }
+

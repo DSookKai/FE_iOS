@@ -10,7 +10,7 @@
 		532D3DA42658B49F0050134A /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D3DA32658B49F0050134A /* CourseViewController.swift */; };
 		5393FCF22658B3A800C6FF54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393FCF12658B3A800C6FF54 /* AppDelegate.swift */; };
 		5393FCF42658B3A800C6FF54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393FCF32658B3A800C6FF54 /* SceneDelegate.swift */; };
-		5393FCF62658B3A800C6FF54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393FCF52658B3A800C6FF54 /* ViewController.swift */; };
+		5393FCF62658B3A800C6FF54 /* TrackMyTraceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393FCF52658B3A800C6FF54 /* TrackMyTraceViewController.swift */; };
 		5393FCF92658B3A800C6FF54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5393FCF72658B3A800C6FF54 /* Main.storyboard */; };
 		5393FCFB2658B3AA00C6FF54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5393FCFA2658B3AA00C6FF54 /* Assets.xcassets */; };
 		5393FCFE2658B3AA00C6FF54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5393FCFC2658B3AA00C6FF54 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		5393FCEE2658B3A800C6FF54 /* FE_iOS-main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FE_iOS-main.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5393FCF12658B3A800C6FF54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5393FCF32658B3A800C6FF54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5393FCF52658B3A800C6FF54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5393FCF52658B3A800C6FF54 /* TrackMyTraceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackMyTraceViewController.swift; sourceTree = "<group>"; };
 		5393FCF82658B3A800C6FF54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5393FCFA2658B3AA00C6FF54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5393FCFD2658B3AA00C6FF54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				5393FCF12658B3A800C6FF54 /* AppDelegate.swift */,
 				5393FCF32658B3A800C6FF54 /* SceneDelegate.swift */,
-				5393FCF52658B3A800C6FF54 /* ViewController.swift */,
+				5393FCF52658B3A800C6FF54 /* TrackMyTraceViewController.swift */,
 				5393FCF72658B3A800C6FF54 /* Main.storyboard */,
 				532D3DA32658B49F0050134A /* CourseViewController.swift */,
 				5393FCFA2658B3AA00C6FF54 /* Assets.xcassets */,
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5393FCF62658B3A800C6FF54 /* ViewController.swift in Sources */,
+				5393FCF62658B3A800C6FF54 /* TrackMyTraceViewController.swift in Sources */,
 				532D3DA42658B49F0050134A /* CourseViewController.swift in Sources */,
 				5393FCF22658B3A800C6FF54 /* AppDelegate.swift in Sources */,
 				5393FCF42658B3A800C6FF54 /* SceneDelegate.swift in Sources */,
