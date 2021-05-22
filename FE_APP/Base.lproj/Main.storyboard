@@ -136,8 +136,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="생년월일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J16-3m-UTo">
+                                <rect key="frame" x="31" y="634" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyZ-R5-ft4">
-                                <rect key="frame" x="166" y="613" width="82" height="30"/>
+                                <rect key="frame" x="166" y="715" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="회원가입 완료"/>
                                 <connections>
@@ -145,19 +152,24 @@
                                     <segue destination="zCE-Hb-oAh" kind="custom" customClass="SegueRightToLeft" customModule="FE_APP" customModuleProvider="target" id="tmi-qK-vcA"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qo4-Jg-gg5">
+                                <rect key="frame" x="101" y="609" width="253" height="88"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KTX-9Y-12Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="wxc-91-boz"/>
                     <connections>
+                        <outlet property="uidatePicker" destination="qo4-Jg-gg5" id="LVl-jZ-agp"/>
                         <outlet property="userNameTextfield" destination="QQP-ia-S6D" id="z7h-MV-AgG"/>
                         <outlet property="userNumberTextfield" destination="UNn-cv-xHx" id="v4o-kP-fKu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVl-Df-QhL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54" y="714"/>
+            <point key="canvasLocation" x="53.623188405797109" y="713.83928571428567"/>
         </scene>
         <!--naviWebView-->
         <scene sceneID="McC-D6-RQi">
@@ -171,7 +183,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hSM-lz-1p7"/>
+        <segue reference="tmi-qK-vcA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.circle" catalog="system" width="128" height="121"/>

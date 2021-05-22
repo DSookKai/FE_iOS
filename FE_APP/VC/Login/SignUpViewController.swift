@@ -12,6 +12,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var userNameTextfield: UITextField!
     
     @IBOutlet weak var userNumberTextfield: UITextField!
+    @IBOutlet weak var uidatePicker: UIDatePicker!
+    
     @IBAction func didDoneSignup(_ sender: Any) {
         
         
