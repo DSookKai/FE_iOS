@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcy-0A-Tfp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--메인화면_기사-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FE_iOS_main" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mAj-26-ZFl">
+                                <rect key="frame" x="16" y="128" width="382" height="70.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코스별 예약 현황" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mG-a1-yZl">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ3-zu-otl">
+                                        <rect key="frame" x="0.0" y="20.5" width="382" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7YG-6S-f1E"/>
+                                        </constraints>
+                                        <state key="normal" title="오후 2시 남산타워"/>
+                                        <connections>
+                                            <segue destination="ApI-e6-fkf" kind="show" identifier="" id="GHO-2g-VZT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mAj-26-ZFl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EhW-Dy-yYp"/>
+                            <constraint firstItem="mAj-26-ZFl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Vc2-Dg-L78"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mAj-26-ZFl" secondAttribute="trailing" constant="16" id="bGc-hY-rYF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="메인화면_기사" id="bkL-69-imG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676.81159420289862" y="81.696428571428569"/>
+        </scene>
+        <!--코스정보-->
+        <scene sceneID="MNF-kK-ywX">
+            <objects>
+                <viewController id="ApI-e6-fkf" customClass="CourseViewController" customModule="FE_iOS_main" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tpw-qb-gJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OLc-Ws-tka">
+                                <rect key="frame" x="16" y="118" width="382" height="644"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 위치:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0h-RQ-cde">
+                                <rect key="frame" x="16" y="782" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다음 도착지:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzh-Zm-9RD">
+                                <rect key="frame" x="16" y="823" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BhW-f4-S3t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OLc-Ws-tka" firstAttribute="top" secondItem="BhW-f4-S3t" secondAttribute="top" constant="30" id="Ibk-Cc-Gfn"/>
+                            <constraint firstItem="L0h-RQ-cde" firstAttribute="leading" secondItem="BhW-f4-S3t" secondAttribute="leading" constant="16" id="N8q-ls-mqR"/>
+                            <constraint firstItem="L0h-RQ-cde" firstAttribute="top" secondItem="OLc-Ws-tka" secondAttribute="bottom" constant="20" id="P1t-NW-uck"/>
+                            <constraint firstItem="BhW-f4-S3t" firstAttribute="trailing" secondItem="OLc-Ws-tka" secondAttribute="trailing" constant="16" id="S8r-Kb-nvI"/>
+                            <constraint firstItem="Zzh-Zm-9RD" firstAttribute="top" secondItem="L0h-RQ-cde" secondAttribute="bottom" constant="20" id="ZcZ-f2-km4"/>
+                            <constraint firstItem="Zzh-Zm-9RD" firstAttribute="leading" secondItem="BhW-f4-S3t" secondAttribute="leading" constant="16" id="gg3-51-k8X"/>
+                            <constraint firstItem="OLc-Ws-tka" firstAttribute="leading" secondItem="BhW-f4-S3t" secondAttribute="leading" constant="16" id="ovP-W9-FNg"/>
+                            <constraint firstItem="BhW-f4-S3t" firstAttribute="bottom" secondItem="OLc-Ws-tka" secondAttribute="bottom" constant="100" id="vaN-Cp-l3Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="코스정보" id="eR4-8m-K1c"/>
+                    <connections>
+                        <outlet property="lblCurrentLocation" destination="L0h-RQ-cde" id="ZB5-7P-kNh"/>
+                        <outlet property="myMap" destination="OLc-Ws-tka" id="aWl-q8-9tf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5PM-km-9i5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.753623188406" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RSy-jv-jJV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fcy-0A-Tfp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B0y-mO-AYh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="t2K-g4-KZw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbA-Dl-CRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233.33333333333334" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
