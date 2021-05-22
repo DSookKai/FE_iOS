@@ -113,6 +113,8 @@ extension TrackMyTraceViewController: CLLocationManagerDelegate {
                 DispatchQueue.main.async {
                     self.start?.text = pm.thoroughfare!
                 }
+            }else {
+                self.start?.text = ""
             }
             
         })

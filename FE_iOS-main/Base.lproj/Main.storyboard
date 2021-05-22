@@ -11,39 +11,89 @@
         <!--메인화면_기사-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FE_iOS_main" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mAj-26-ZFl">
-                                <rect key="frame" x="16" y="128" width="382" height="70.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Br-EK-rqY">
+                                <rect key="frame" x="26" y="138" width="366" height="150"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코스별 예약 현황" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mG-a1-yZl">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ3-zu-otl">
-                                        <rect key="frame" x="0.0" y="20.5" width="382" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYY-Hi-Z0N">
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5월 28일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Far-5g-qvo">
+                                                <rect key="frame" x="24" y="15" width="64.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오후 2시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxO-1s-TzM">
+                                                <rect key="frame" x="24" y="43.5" width="58" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남산 코스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mn-aV-vTx">
+                                                <rect key="frame" x="90" y="43" width="63" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbT-jc-rpZ">
+                                                <rect key="frame" x="130" y="87" width="36" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예약 승객" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGj-x0-LP1">
+                                                <rect key="frame" x="24" y="87" width="88" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="7YG-6S-f1E"/>
+                                            <constraint firstItem="hxO-1s-TzM" firstAttribute="top" secondItem="Far-5g-qvo" secondAttribute="bottom" constant="8" id="HG0-Ya-9GZ"/>
+                                            <constraint firstItem="8Mn-aV-vTx" firstAttribute="leading" secondItem="hxO-1s-TzM" secondAttribute="trailing" constant="8" id="L2F-m7-IKh"/>
+                                            <constraint firstItem="ZbT-jc-rpZ" firstAttribute="firstBaseline" secondItem="PGj-x0-LP1" secondAttribute="baseline" id="M5f-ph-lHW"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZbT-jc-rpZ" secondAttribute="bottom" constant="34" id="MrR-ZX-fre"/>
+                                            <constraint firstItem="8Mn-aV-vTx" firstAttribute="baseline" secondItem="hxO-1s-TzM" secondAttribute="baseline" id="Qqg-TH-SVE"/>
+                                            <constraint firstItem="8Mn-aV-vTx" firstAttribute="leading" secondItem="yYY-Hi-Z0N" secondAttribute="leading" constant="90" id="dhJ-ht-ttF"/>
+                                            <constraint firstItem="ZbT-jc-rpZ" firstAttribute="baseline" secondItem="PGj-x0-LP1" secondAttribute="baseline" id="lVU-Mt-dvx"/>
+                                            <constraint firstItem="ZbT-jc-rpZ" firstAttribute="top" secondItem="8Mn-aV-vTx" secondAttribute="bottom" constant="23" id="nlI-Dw-9vr"/>
+                                            <constraint firstItem="Far-5g-qvo" firstAttribute="leading" secondItem="hxO-1s-TzM" secondAttribute="leading" id="pVh-fJ-vh8"/>
+                                            <constraint firstItem="ZbT-jc-rpZ" firstAttribute="leading" secondItem="PGj-x0-LP1" secondAttribute="trailing" constant="18" id="rfG-cc-Geo"/>
+                                            <constraint firstItem="8Mn-aV-vTx" firstAttribute="top" secondItem="yYY-Hi-Z0N" secondAttribute="top" constant="43" id="ydt-NJ-Sho"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZbT-jc-rpZ" secondAttribute="trailing" constant="90" id="zeJ-mk-Idv"/>
                                         </constraints>
-                                        <state key="normal" title="오후 2시 남산타워"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNV-CO-pW9">
+                                        <rect key="frame" x="256" y="0.0" width="110" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="zSs-dw-FIy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                        <state key="normal" title="픽업 시작 &gt;">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
+                                        </state>
                                         <connections>
-                                            <segue destination="ApI-e6-fkf" kind="show" identifier="" id="GHO-2g-VZT"/>
+                                            <segue destination="ApI-e6-fkf" kind="show" id="xj1-O8-qUo"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="wef-bF-uun"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mAj-26-ZFl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EhW-Dy-yYp"/>
-                            <constraint firstItem="mAj-26-ZFl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Vc2-Dg-L78"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mAj-26-ZFl" secondAttribute="trailing" constant="16" id="bGc-hY-rYF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Br-EK-rqY" secondAttribute="trailing" constant="22" id="7q5-XR-kT7"/>
+                            <constraint firstItem="9Br-EK-rqY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="Gnb-Sg-Pdc"/>
+                            <constraint firstItem="9Br-EK-rqY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="q67-qQ-DFU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="메인화면_기사" id="bkL-69-imG"/>
@@ -194,6 +244,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
