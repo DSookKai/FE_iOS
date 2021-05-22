@@ -15,7 +15,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate {
     var longitude: Double?
     
 
-    @IBOutlet weak var nameTextfield: UITextField!
+    @IBOutlet weak var birthTextfield: UITextField!
     
     @IBOutlet weak var numberTextfield: UITextField!
     
@@ -33,6 +33,11 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate {
         longitude = coor?.longitude
         //print("dddddddddd" + String(latitude!))
         //서버로 사용자 현재 위치 latitude, longitude넘기면 됨!!
+        
+        let webVC = UIStoryboard.init(name: "WebView", bundle: nil).instantiateViewController(withIdentifier: "web")
+        //let webNavVC = UINavigationController(rootViewController: webVC)
+        webVC.modalPresentationStyle = .fullScreen
+        self.present(webVC, animated: true, completion: nil)
         
     }
     

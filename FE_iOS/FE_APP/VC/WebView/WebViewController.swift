@@ -14,8 +14,8 @@ class WebViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadWebPage("http://www.google.com")
-        // Do any additional setup after loading the view.
+        //"18.217.211.176:3000/course"
+        //loadWebPage("18.217.211.176:3000/course")
     }
     
   

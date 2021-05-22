@@ -11,7 +11,7 @@
         <!--Web View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="WebViewController" customModule="FE_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="web" id="Y6W-OH-hqX" customClass="WebViewController" customModule="FE_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
         <!--Navigation Controller-->
         <scene sceneID="RvU-sC-ScZ">
             <objects>
-                <navigationController storyboardIdentifier="naviWebView" automaticallyAdjustsScrollViewInsets="NO" id="fSZ-Kv-EC5" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fSZ-Kv-EC5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ror-ul-Y5k">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -23,6 +23,9 @@
 		8E2744072659084A005804D6 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2744062659084A005804D6 /* PushKit.framework */; };
 		8E27440926590850005804D6 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E27440826590850005804D6 /* UserNotifications.framework */; };
 		8E27440C26591558005804D6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E27440B26591557005804D6 /* WebKit.framework */; };
+		8E2744102659636A005804D6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E27440F2659636A005804D6 /* FirstViewController.swift */; };
+		8E2744122659757C005804D6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2744112659757B005804D6 /* ResultViewController.swift */; };
+		8E27441526597597005804D6 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E27441426597597005804D6 /* Result.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		8E27440826590850005804D6 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		8E27440A26590885005804D6 /* FE_APP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FE_APP.entitlements; sourceTree = "<group>"; };
 		8E27440B26591557005804D6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8E27440F2659636A005804D6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8E2744112659757B005804D6 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		8E27441426597597005804D6 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 		8E2743F42658FBEA005804D6 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				8E27441326597581005804D6 /* Result */,
 				8E2743FC2658FF05005804D6 /* WebView */,
 				8E2743F92658FC13005804D6 /* Login */,
 			);
@@ -111,6 +118,7 @@
 			children = (
 				8E2743F72658FC0C005804D6 /* SignUpViewController.swift */,
 				8E2743F52658FBFE005804D6 /* LoginViewController.swift */,
+				8E27440F2659636A005804D6 /* FirstViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -132,6 +140,15 @@
 				8E2744062659084A005804D6 /* PushKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E27441326597581005804D6 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				8E2744112659757B005804D6 /* ResultViewController.swift */,
+				8E27441426597597005804D6 /* Result.storyboard */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E27441526597597005804D6 /* Result.storyboard in Resources */,
 				8E2743EB2658D298005804D6 /* LaunchScreen.storyboard in Resources */,
 				8E2743E82658D298005804D6 /* Assets.xcassets in Resources */,
 				8E2743FE2658FF23005804D6 /* WebView.storyboard in Resources */,
@@ -210,10 +228,12 @@
 				8E27440426590548005804D6 /* CourseViewController.swift in Sources */,
 				8E2743F82658FC0C005804D6 /* SignUpViewController.swift in Sources */,
 				8E2743E02658D294005804D6 /* ViewController.swift in Sources */,
+				8E2744102659636A005804D6 /* FirstViewController.swift in Sources */,
 				8E2743DC2658D294005804D6 /* AppDelegate.swift in Sources */,
 				8E2744002658FF78005804D6 /* WebViewController.swift in Sources */,
 				8E2743E62658D294005804D6 /* FE_APP.xcdatamodeld in Sources */,
 				8E2743DE2658D294005804D6 /* SceneDelegate.swift in Sources */,
+				8E2744122659757C005804D6 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
