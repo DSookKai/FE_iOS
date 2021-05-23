@@ -88,7 +88,7 @@ class DataManager {
     
 //    public func travelerInfoPost(completionHandler: @escaping (_ result: Data) -> ()){
 //        let params = ["username":"john", "password":"123456"] as Dictionary<String, String>
-//        
+//
 //        let param = "userName=이름이&phoneNum=\(phoneNumber!)&birth=\(birthDay)&location=\(location)"
 //                let paramData = param.data(using: .utf8)
 //        let paramData = param.data(using: .utf8)
@@ -96,15 +96,15 @@ class DataManager {
 //
 //
 //        var request = URLRequest(url: url!)
-//        
+//
 //        request.httpMethod = "POST"
 //        request.httpBody = paramData
-//        
-//        
+//
+//
 //        // HTTP 메시지 헤더
 //       request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
 //       request.setValue(String(paramData!.count), forHTTPHeaderField: "Content-Length")
-//        
+//
 //        //request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 //
 //        let session = URLSession.shared

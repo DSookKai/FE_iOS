@@ -36,6 +36,7 @@ class ShowTableViewCell: UITableViewCell {
         location.text = model.courseName
         hour.text = "\(model.courseTime)시"
         date.text = "\(model.date)"
+        count.text = "\(model.travelorInfo.count)명"
     }
     
 }
