@@ -11,7 +11,9 @@ import MapKit
 
 class TrackMyTraceViewController: UIViewController {
 
+    var selectedCourse: course = course(id: "", courseName: "", courseTime: 0, carNumber: 0, date: 0, travelorInfo: [""], companionHas: false, guaridanHas: false)
     
+    var dataManager: DataManager!
     var customerLocation: [(latitude:Double, longitude: Double)] = [(37.5506753, 127.0409622),(37.520641,126.9139242),(37.338904, 126.5930664)]
       var customerName = ["김명옥", "장영훈" , "강지환"]
       var customerOrder = ["첫번째 승객", "두번째 승객", "세번째 승객"]
@@ -54,7 +56,10 @@ class TrackMyTraceViewController: UIViewController {
             userName.text = customerName[0]
           cnt += 1
         }
-      }
+        
+        //send push message
+        dataManager.getBus(userId: "60a9036c5b86fa941fc123c6", courseId: "60a8fecd5b86fa941fc123c4")
+     }
      
     
       lazy var locationManager: CLLocationManager = {
@@ -64,6 +69,7 @@ class TrackMyTraceViewController: UIViewController {
         manager.delegate = self
         return manager
        }()
+        
       var previousCoordinate: CLLocationCoordinate2D?
       override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +83,9 @@ class TrackMyTraceViewController: UIViewController {
         self.MapView.isZoomEnabled = true
         self.MapView.delegate = self
         makePin()
+        dataManager = DataManager()
+        print("come")
+        print(selectedCourse)
     
         
       }

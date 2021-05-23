@@ -15,15 +15,15 @@ struct user {
     var location:  CLLocationCoordinate2D //  ex> 서울시 용산구 효창동 -> 서울시
     var acceptedInfo: [course]
   
-//전화번호 인증은 구조체에 들어가지 않음
-
 }
 
 struct course {
+    var id: String
     var courseName: String
     var courseTime: Int
     var carNumber: Int
     var date: Int
+    var travelorInfo: [String]
     var companionHas: Bool {
         didSet {
             if companionHas == true  {

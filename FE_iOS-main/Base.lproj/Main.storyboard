@@ -33,6 +33,7 @@
                     <navigationItem key="navigationItem" title="예약 조회" id="bkL-69-imG"/>
                     <connections>
                         <outlet property="tableview" destination="ciz-Yy-hs0" id="OpV-9j-c7B"/>
+                        <segue destination="ApI-e6-fkf" kind="show" identifier="track" id="KwU-dy-JQI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -48,10 +49,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OLc-Ws-tka">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMk-kR-IRI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="98"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="98"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxt-ec-D4i">
                                         <rect key="frame" x="40" y="10" width="334" height="34"/>

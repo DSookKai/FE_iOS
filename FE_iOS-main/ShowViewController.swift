@@ -32,10 +32,6 @@ class ShowViewController: UIViewController {
         dataManager.getCourse() { [self]
             result in
             do {
-//                var timeText: Int = 0
-//                var name:String = ""
-//                var carNum:String = ""
-//                var dateText:Int = 0
                 if let coursesGroup = try JSONSerialization.jsonObject(with: result) as? [Dictionary<String, Any>] {
                    
                     for cs in coursesGroup {
@@ -49,17 +45,12 @@ class ShowViewController: UIViewController {
          
                         guard let dateText = (cs["date"] as? NSString)?.intValue else { return }
                         
-//                        print(type(of: timeText))
-//                        print(type(of: name))
-//                        print(type(of: carNum))
-//                        print(type(of: dateText))
-//
-////                        print(timeText)
-////                        print(name)
-////                        print(carNum)
-////                        print(dateText)
-//
-                        let course = course(courseName: name, courseTime: Int(timeText), carNumber: Int(carNum), date: Int(dateText), companionHas: false, guaridanHas: true)
+                        guard let courseId = (cs["_id"] as? String) else { return }
+                        
+                        guard let travelerInfo = (cs["travelerInfo"] as? [String]) else { return }
+                        
+                        
+                        let course = course(id: courseId, courseName: name, courseTime: Int(timeText), carNumber: Int(carNum), date: Int(dateText), travelorInfo: travelerInfo, companionHas: false, guaridanHas: true)
                         self.courses.append(course)
                             
                         DispatchQueue.main.async {
@@ -95,10 +86,25 @@ extension ShowViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let temp = self.storyboard?.instantiateViewController(identifier: "track"){
-            self.navigationController?.pushViewController(temp, animated: true)
-        }
+//        if let temp = self.storyboard?.instantiateViewController(identifier: "track"){
+//
+//            self.navigationController?.pushViewController(temp, animated: true)
+//        }
         
+        performSegue(withIdentifier: "track", sender: self)
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let index = tableview.indexPathForSelectedRow else {
+            return
+        }
+        if let track = segue.destination as? TrackMyTraceViewController {
+            
+            track.selectedCourse = courses[index.row]
+        }
     }
 }
 
